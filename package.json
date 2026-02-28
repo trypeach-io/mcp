@@ -1,0 +1,41 @@
+{
+  "name": "@peachai/mcp",
+  "version": "0.1.1",
+  "description": "MCP server for the Peach AI WhatsApp Business Messaging Platform",
+  "author": "Peach AI <hello@trypeach.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trypeach-ai/mcp.git"
+  },
+  "homepage": "https://github.com/trypeach-ai/mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "whatsapp",
+    "peach",
+    "peach-ai",
+    "messaging",
+    "claude"
+  ],
+  "type": "module",
+  "bin": {
+    "peach-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
