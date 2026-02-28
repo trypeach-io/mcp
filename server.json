@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.trypeach-io/mcp",
+  "description": "Send and manage WhatsApp messages, contacts, templates, and events via Peach AI.",
+  "repository": {
+    "url": "https://github.com/trypeach-io/mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@peachai/mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://app.trypeach.ai/api/mcp",
+        "headers": [
+          { "name": "Authorization", "value": "{token}" }
+        ]
+      }
+    }
+  ]
+}
+

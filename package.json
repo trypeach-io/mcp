@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/trypeach-ai/mcp.git"
   },
+  "mcpName": "io.github.trypeach-io/mcp",
   "homepage": "https://github.com/trypeach-ai/mcp#readme",
   "keywords": [
     "mcp",
