@@ -52,6 +52,31 @@ Go to **Settings → MCP** and add:
 }
 ```
 
+### Claude Code
+
+Run this command to add Peach AI to your Claude Code setup:
+
+```bash
+claude mcp add --scope user --env PEACH_API_KEY=your-api-key peach -- npx -y @peachai/mcp
+```
+
+Or add it manually to your `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "peach": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@peachai/mcp"],
+      "env": {
+        "PEACH_API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
 ## Available tools
 
 ### Messaging
