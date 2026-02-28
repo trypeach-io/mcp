@@ -1,6 +1,6 @@
 # @peachai/mcp
 
-MCP (Model Context Protocol) server for the [Peach](https://trypeach.io) WhatsApp messaging platform. Lets AI assistants like Claude send messages, manage templates, contacts, and media directly through your Peach account.
+MCP (Model Context Protocol) server for the [Peach](https://trypeach.ai) WhatsApp messaging platform. Lets AI assistants like Claude send messages, manage templates, contacts, and media directly through your Peach account.
 
 ## Requirements
 
@@ -9,7 +9,7 @@ MCP (Model Context Protocol) server for the [Peach](https://trypeach.io) WhatsAp
 
 ## Getting your API key
 
-Log in to [app.trypeach.io](https://app.trypeach.io), go to **Settings → API**, and copy your API key.
+Log in to [app.trypeach.ai](https://app.trypeach.ai), go to **Settings → API**, and copy your API key.
 
 ## Setup
 
