@@ -13,6 +13,26 @@ Log in to [app.trypeach.ai](https://app.trypeach.ai), go to **Settings → API**
 
 ## Setup
 
+### Hosted Server
+
+*Recommended*
+Peach offers hosted MCP server. We recommend using this.
+```json
+{
+  "mcpServers": {
+    "peach": {
+      "command": "/Users/suresh/.nvm/versions/node/v20.19.5/bin/node",
+      "args": [
+        "/Users/suresh/.nvm/versions/node/v20.19.5/lib/node_modules/mcp-remote/dist/proxy.js",
+        "https://app.trypeach.ai/api/mcp",
+        "--header",
+        "Authorization: <YOUR PEACH API KEY>"
+      ]
+    }
+  }
+}
+```
+
 ### Claude Desktop
 
 Add the following to your `claude_desktop_config.json`:
