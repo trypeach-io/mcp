@@ -21,9 +21,9 @@ Peach offers hosted MCP server. We recommend using this.
 {
   "mcpServers": {
     "peach": {
-      "command": "/Users/suresh/.nvm/versions/node/v20.19.5/bin/node",
+      "command": "node",
       "args": [
-        "/Users/suresh/.nvm/versions/node/v20.19.5/lib/node_modules/mcp-remote/dist/proxy.js",
+        "<path_to_node_version>/node_modules/mcp-remote/dist/proxy.js",
         "https://app.trypeach.ai/api/mcp",
         "--header",
         "Authorization: <YOUR PEACH API KEY>"
