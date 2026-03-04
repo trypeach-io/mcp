@@ -13,10 +13,24 @@ Log in to [app.trypeach.ai](https://app.trypeach.ai), go to **Settings → API**
 
 ## Setup
 
-### Hosted Server
+### Hosted Server setup
 
-*Recommended*
+**Recommended**
 Peach offers hosted MCP server. We recommend using this.
+```json
+{
+  "mcpServers": {
+    "peach": {
+      "url": "https://app.trypeach.ai/api/mcp",
+      "headers": {
+        "Authorization": "<YOUR PEACH API KEY>"
+      }
+    }
+  }
+}
+```
+If you're setting this up in Claude, use this:
+
 ```json
 {
   "mcpServers": {
