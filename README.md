@@ -29,23 +29,6 @@ Peach offers hosted MCP server. We recommend using this.
   }
 }
 ```
-If you're setting this up in Claude, use this:
-
-```json
-{
-  "mcpServers": {
-    "peach": {
-      "command": "node",
-      "args": [
-        "<path_to_node_version>/node_modules/mcp-remote/dist/proxy.js",
-        "https://app.trypeach.ai/api/mcp",
-        "--header",
-        "Authorization: <YOUR PEACH API KEY>"
-      ]
-    }
-  }
-}
-```
 
 ### Claude Desktop
 
@@ -110,6 +93,22 @@ Or add it manually to your `.mcp.json`:
   }
 }
 ```
+### Antigravity
+Go to Antigravity settings -> Customizations. Click Open MCP Config and add the following:
+
+```json
+{
+  "mcpServers": {
+    "peach": {
+      "serverUrl": "https://app.trypeach.ai/api/mcp",
+       "headers": {
+        "Authorization": "<YOUR PEACH API KEY>"
+      }
+    }
+  }
+}
+```
+
 
 ## Available tools
 
