@@ -143,6 +143,23 @@ Or add it manually to your `.mcp.json`:
 |------|-------------|
 | `peach_list_messages` | List messages with optional filters |
 
+### Automations (Streams)
+| Tool | Description |
+|------|-------------|
+| `peach_list_automations` | List Stream automations (conversation flows) |
+| `peach_get_automation` | Get an automation incl. its step-graph definition |
+| `peach_create_automation` | Create a definition-driven automation |
+| `peach_update_automation` | Update an automation's definition / status |
+| `peach_trigger_automation` | Trigger an automation for a contact |
+
+### Triggers & conditions
+| Tool | Description |
+|------|-------------|
+| `peach_list_expressions` | List the trigger condition library (the "when") |
+| `peach_list_triggers` | List the triggers configured on an automation |
+| `peach_create_trigger` | Wire an automation to an event: pick an expression, set its variables, map payload fields (JSONPath) |
+| `peach_update_trigger` | Update a trigger's variables, data mappings, or activation |
+
 ## Example prompts
 
 - *"Send the order_confirmation template to +14155552671 with order ID 12345"*
@@ -150,3 +167,5 @@ Or add it manually to your `.mcp.json`:
 - *"List all my approved WhatsApp templates"*
 - *"Update the contact +14155552671's name to John Smith"*
 - *"Launch a broadcast using template promo_v2 to audience list abc123"*
+- *"List the available trigger conditions for Shopify"*
+- *"Trigger my abandoned-cart automation when a Shopify order is paid, but only if the source isn't POS, and map the customer's phone and order id into the flow"*
